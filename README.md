@@ -1,4 +1,4 @@
-# Quinela Master - Backend
+# Quiniela Master - Backend
 
 This is the backend of the "Quinela Master" project, a REST API developed with **Node.js** and **Express**.
 
