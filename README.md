@@ -1,58 +1,58 @@
 # Quinela Master - Backend
 
-Este es el backend del proyecto "Quinela Master", una API REST desarrollada con **Node.js** y **Express**.
+This is the backend of the "Quinela Master" project, a REST API developed with **Node.js** and **Express**.
 
-## Tecnologías principales
+## Main Technologies
 
 - **Node.js** & **Express**
 - **Sequelize** (ORM)
-- **PostgreSQL** (Base de datos)
-- **Bcrypt** & **JSON Web Token (JWT)** (Autenticación y seguridad)
-- **Zod** (Validación de esquemas)
-- **Node-cron** (Tareas programadas)
-- **Helmet** & **Cors** (Seguridad y configuración de peticiones)
+- **PostgreSQL** (Database)
+- **Bcrypt** & **JSON Web Token (JWT)** (Authentication and security)
+- **Zod** (Schema validation)
+- **Node-cron** (Scheduled tasks)
+- **Helmet** & **Cors** (Security and request configuration)
 
-## Requisitos previos
+## Prerequisites
 
-Asegúrate de tener instalado:
+Make sure you have installed:
 - [Node.js](https://nodejs.org/)
 - [PostgreSQL](https://www.postgresql.org/)
 
-## Instalación
+## Installation
 
-1. Clona el repositorio o ubícate en la carpeta del backend:
+1. Clone the repository or navigate to the backend folder:
    ```bash
    cd Quinela-Master-main
    ```
 
-2. Instala las dependencias necesarias usando npm:
+2. Install the necessary dependencies using npm:
    ```bash
    npm install
    ```
 
-## Configuración del entorno
+## Environment Configuration
 
-Crea un archivo `.env` en la raíz de esta carpeta basándote en la configuración de tu entorno y base de datos local. Necesitarás configurar los parámetros de conexión de PostgreSQL, así como la clave secreta para JWT.
+Create a `.env` file in the root of this folder based on your environment configuration and local database. You will need to configure the PostgreSQL connection parameters, as well as the secret key for JWT.
 
-Ejemplo de `.env`:
+Example of `.env`:
 ```env
 PORT=3000
 DB_HOST=localhost
 DB_PORT=5432
 DB_USER=postgres
-DB_PASSWORD=tu_contraseña
+DB_PASSWORD=your_password
 DB_NAME=quinela_db
-JWT_SECRET=tu_clave_secreta_super_segura
+JWT_SECRET=your_super_secret_key
 ```
 
-## Scripts disponibles
+## Available Scripts
 
-En el directorio del proyecto, puedes ejecutar los siguientes comandos:
+In the project directory, you can run the following commands:
 
 ### `npm run dev`
 
-Inicia el servidor en modo de desarrollo utilizando `nodemon`. El servidor se reiniciará automáticamente si realizas cambios en el código.
+Starts the server in development mode using `nodemon`. The server will automatically restart if you make changes to the code.
 
 ### `npm start`
 
-Inicia la aplicación para un entorno de producción utilizando directamente node (`node src/server.js`).
+Starts the application for a production environment directly using node (`node src/server.js`).
